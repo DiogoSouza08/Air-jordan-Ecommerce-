@@ -1,23 +1,81 @@
 import './App.css';
+import CardsMandF from './components.js/CardsMadnF';
+import ClothingOptions from './components.js/ClothingOptions';
+import BuyBtn from './components.js/buyBtn';
+import CustomSection from './components.js/customSection';
 import Header from './components.js/header';
+import "@fontsource/poppins";
+import ProductCard from './components.js/productCard';
+import SeeAllBtn from './components.js/seeAllBtn';
+import EmailInput from './components.js/emailInput';
+import { Footer } from 'flowbite-react';
+import Rodape from './components.js/footer';
 
 function App() {
   return (
     <div className="App ">
-      <header className="App-header ">
+      <header className="App-header bg-zinc-700 ">
       
-      <main className='flex-col lg:h-screen flex items bg-center '>
+      <main className='flex-col lg:h-screen bg-white sm:pb-0 pb-24 flex items bg-center '>
       <Header/>
-        <div className='bg-white px-3.5 lg:px-24 overflow-hidden h-full justify-between flex-col-reverse md:flex-row flex items-start'>
+        <div className=' px-3.5 lg:px-24 overflow-hidden h-full justify-between flex-col-reverse md:flex-row flex md:items-center lg:items-start items-center'>
 
-        <div className='h-full bg-red-600 items-center justify-center text-center flex'>
-          <h1>THE LAST DANCE</h1>
+        <div className='h-full sm:items-start items-center space-y-6 text-center sm:text-start   flex-col justify-center  flex'>
+          <span className='title font-bold text-red-700 text-8xl lg:text-9xl'>THE LAST<br></br> DANCE</span>
+          <p className='text-zinc-700 text-xl'>Descubra a história por trás da <br></br>coleção Air Jordan</p>
         </div>
         
-        <img src="https://cdn.afew-store.com/assets/38/388297/1200/air-jordan-1-retro-high-og-sp-university-red-black-summit-white-dv1748-601-footwear%20%3E%20sneaker-packshots-120.jpg" alt="" className=' w-full md:w-2/5 lg:' />
+        <img src="https://cdn.afew-store.com/assets/38/388297/1200/air-jordan-1-retro-high-og-sp-university-red-black-summit-white-dv1748-601-footwear%20%3E%20sneaker-packshots-120.jpg" alt="" className=' w-full md:w-45 sm:w-42 ' />
         
         </div>
       </main>
+
+      <section>
+      <CardsMandF/>
+      </section>
+      
+      <section>
+      <CustomSection
+        backgroundImage='https://images.unsplash.com/photo-1640000013087-842012285d30?q=80&w=1567&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'
+        title="O que você está procurando?"
+        subtitle="Temos qualquer tipo de Air Jordan que levanta sua alma!"
+      ><BuyBtn />
+      </CustomSection>
+      </section>
+
+
+      <section className='lg:px-24 gap-10 flex flex-col px-5 text-gray-400 justify-center text-center items-center py-24'>
+        <div className='gap-2 flex flex-col'>
+        <span className='title uppercase text-8xl  font-extrabold '>Roupas</span>
+        <p>Descubra a essência jordan</p>
+        </div>
+        <ClothingOptions/>
+      </section>
+
+      <section>
+      <CustomSection
+        backgroundImage='https://images.unsplash.com/photo-1565261189855-95dac103929d?q=80&w=1471&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'
+        title="Você nas alturas"
+        subtitle="O melhor da Jordan, estilo moderno, utilidade de rua!"
+      ><BuyBtn />
+      </CustomSection>
+      </section>
+
+      <section className='lg:px-24 gap-10 flex flex-col px-5 text-gray-400 justify-center text-center items-center py-24'> 
+      <span className=' uppercase text-5xl font-black '>Coleção Air Jordan</span>
+      <ProductCard/>
+      <SeeAllBtn/>
+      </section >
+
+      <section className='lg:px-24 gap-10 flex flex-col px-5 text-gray-400 justify-center text-center items-center py-24'>
+      <span className=' uppercase text-3xl font-black '>Inscreva-se para receber notícias e promoções</span>
+      <EmailInput/>
+      </section>  
+      
+      <footer>
+        <Rodape/>
+      </footer>
+
       </header>
     </div>
   );

@@ -12,7 +12,7 @@ const Header = () => {
         </div>
         <img src="./jordan-logo.webp" alt="" className='w-12' />
         
-        <ul className='gap-9 text-gray-300 lg:flex hidden'>
+        <ul className='gap-10 text-gray-300 text-sm lg:flex hidden'>
             <li>MASCULINO</li>
             <li>FEMININO</li>
             <li>KIDS</li>
