@@ -22,8 +22,8 @@ function EmailInput() {
   };
 
   return (
-    <form onSubmit={handleSubmit} className="gap-2 items-center flex flex-col">
-      <div className='flex flex-row gap-5'>
+    <form onSubmit={handleSubmit} className="gap-2  w-full px-5 items-center flex flex-col">
+      <div className='flex bg flex-row gap-5'>
         <input
           type="email"
           className={`border-b-2 border-gray-400 bg-transparent py-2 px-4 focus:outline-none ${error && 'border-red-700'}`}
