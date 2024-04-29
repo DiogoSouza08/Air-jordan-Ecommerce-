@@ -19,6 +19,9 @@ function App() {
 
   return (
     <div className="App bg-zinc-700 ">
+      <div className='flex items-center justify-center py-2.5 sm:hidden'>
+        <img src="jordan-logo.webp" alt="" className='w-12' />
+      </div>
       <header className="App-header z-40">
         <main className='flex-col  bg-white sm:pb-0 pb-0 flex  '>
           <Header isMenuOpen={isMenuOpen} setIsMenuOpen={setIsMenuOpen} />
@@ -53,7 +56,7 @@ function App() {
       </section>
       <section className='lg:px-24 gap-10 flex flex-col px-5 text-gray-400 justify-center text-center items-center py-24'>
         <div className='gap-2 flex flex-col'>
-          <span className='title uppercase text-8xl  font-extrabold '>Roupas</span>
+          <span className='title uppercase sm:text-8xl text-6xl  font-extrabold '>Roupas</span>
           <p>Descubra a essência jordan</p>
         </div>
         <ClothingOptions />
@@ -68,12 +71,12 @@ function App() {
         </CustomSection>
       </section>
       <section className='lg:px-24 gap-10 flex flex-col px-5 text-gray-400 justify-center text-center items-center py-24'>
-        <span className=' uppercase text-5xl font-black '>Coleção Air Jordan</span>
+        <span className='title uppercase sm:text-8xl text-6xl font-black '>Coleção Air Jordan</span>
         <ProductCard />
         <SeeAllBtn />
       </section >
       <section className='lg:px-24 gap-10 flex flex-col px-5 text-gray-400 justify-center text-center items-center py-24'>
-        <span className=' uppercase text-3xl font-black '>Inscreva-se para receber notícias e promoções</span>
+        <span className='title uppercase text-3xl sm:text-4xl font-black '>Inscreva-se para receber notícias e promoções</span>
         <EmailInput />
       </section>
       <footer>
