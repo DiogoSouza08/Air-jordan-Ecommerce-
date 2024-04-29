@@ -17,21 +17,6 @@ import LoginBtn from './components.js/loginBtn';
 function App() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
-  useEffect(() => {
-    const handleTouchMove = (event) => {
-      if (!isMenuOpen) {
-        event.preventDefault();
-      }
-    };
-
-    document.body.style.overflow = isMenuOpen ? 'hidden' : 'auto';
-    document.addEventListener('touchmove', handleTouchMove, { passive: false });
-
-    return () => {
-      document.removeEventListener('touchmove', handleTouchMove);
-    };
-  }, [isMenuOpen]);
-
   return (
     <div className="App bg-zinc-700 ">
       <header className="App-header z-40">
