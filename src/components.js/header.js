@@ -13,7 +13,7 @@ const Header = ({ isMenuOpen, setIsMenuOpen }) => {
         <div className='lg:hidden flex z-50' >
         <Hamburger color="#fff" toggled={isMenuOpen} toggle={setIsMenuOpen} />
         </div>
-        <img src="./jordan-logo.webp" alt="" className='w-12' />
+        <img src="./jordan-logo.webp" alt="" className='w-12 hidden sm:flex' />
         
         <div className='hidden lg:flex'>
         <MenuOptions layout="horizontal" />
