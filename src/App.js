@@ -19,7 +19,7 @@ function App() {
 
   return (
     <div className="App bg-zinc-700 ">
-      <div className='flex items-center justify-center py-2.5 sm:hidden'>
+      <div className='flex items-center justify-center py-2.5 sm:hidden border-gray-400 border-b'>
         <img src="jordan-logo.webp" alt="" className='w-12' />
       </div>
       <header className="App-header z-40">
