@@ -14,7 +14,7 @@ const ImageTextOverlay = ({ imageUrl, text }) => (
 );
 
 const CardsMandF = () => (
-  <section className=" gap-7 mt-16 sm:mt-0 flex px-5 items-center flex-col sm:flex-row justify-between py-24 text-center text-gray-400 lg:px-24">
+  <section className=" gap-7  sm:mt-0 flex px-5 items-center flex-col sm:flex-row justify-between py-24 text-center text-gray-400 lg:px-24">
     <ImageTextOverlay
       imageUrl="https://images.unsplash.com/photo-1609535766154-e47e5aa87789?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
       text="Masculino"
