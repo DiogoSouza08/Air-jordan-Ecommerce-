@@ -1,17 +1,17 @@
 import React from 'react'
-import { Fade as Hamburger } from 'hamburger-react'
 import PersonIcon from '@mui/icons-material/Person';
 import LoginBtn from './loginBtn'
 import MenuOptions from './menuOptions'
 import SearchIcon from '@mui/icons-material/Search';
+import TemporaryDrawer from './mobileHeader';
 
 
 
-const Header = ({ isMenuOpen, setIsMenuOpen }) => {
+const Header = () => {
     return (
     <header className='bg-zinc-700 px-3 lg:px-24 py-5 flex items-center justify-between'>
         <div className='lg:hidden flex z-50' >
-        <Hamburger color="#fff" toggled={isMenuOpen} toggle={setIsMenuOpen} />
+            <TemporaryDrawer/>
         </div>
         <img src="./jordan-logo.webp" alt="" className='w-12 hidden sm:flex' />
         
