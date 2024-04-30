@@ -21,12 +21,12 @@ function App() {
       <header className="App-header z-40">
         <main className='flex-col  bg-white sm:pb-0 pb-0 flex  '>
           <Header />
-          <div className=' px-3.5 lg:px-24  justify-between flex-col-reverse md:flex-row flex  items-center '>
+          <div className=' px-3.5 lg:px-24  justify-between flex-col-reverse sm:flex-row flex  items-center '>
             <div className='pb-20 sm:pb-0 h-auto  items-start space-y-6 text-center sm:text-start   flex-col justify-center  flex'>
               <span className='title font-bold text-red-700 text-8xl lg:text-9xl'>THE LAST<br></br> DANCE</span>
               <p className='text-zinc-700 text-xl'>Descubra a história por trás da <br></br>coleção Air Jordan</p>
             </div>
-            <img src="https://cdn.afew-store.com/assets/38/388297/1200/air-jordan-1-retro-high-og-sp-university-red-black-summit-white-dv1748-601-footwear%20%3E%20sneaker-packshots-120.jpg" alt="" className=' w-full md:w-45 sm:w-42 ' />
+            <img src="https://cdn.afew-store.com/assets/38/388297/1200/air-jordan-1-retro-high-og-sp-university-red-black-summit-white-dv1748-601-footwear%20%3E%20sneaker-packshots-120.jpg" alt="" className=' w-full md:w-45 sm:w-96 ' />
           </div>
         
         </main>

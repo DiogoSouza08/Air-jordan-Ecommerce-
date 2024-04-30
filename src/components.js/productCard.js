@@ -34,7 +34,7 @@ const ProductCard = () => {
             alt=""
           />
           <div>
-            <p className='font-bold text-lg'>{card.productName}</p>
+            <p className=' text-lg'>{card.productName}</p>
           </div>
         </div>
       ))}
