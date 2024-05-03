@@ -16,9 +16,11 @@ export default function TemporaryDrawer() {
 
   return (
     <div>
+      <FadeInSection>
       <Button onClick={toggleDrawer(true)}>
         <MenuIcon style={{ color: 'white', fontSize: 40 }} />
       </Button>
+      </FadeInSection>
       <Drawer
         open={open}
         onClose={toggleDrawer(false)}

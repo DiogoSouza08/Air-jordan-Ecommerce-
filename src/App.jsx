@@ -49,7 +49,7 @@ function App() {
 
         <section>
           <CustomSection
-            backgroundImage='https://r0.wallpaperflare.com/path/943/148/889/nike-air-jordan-1-shoes-near-chain-link-fence-58988ba4051d129601fa1d5ce3d7e4a0.jpg?timestamp=1714751753643'
+            backgroundImage='https://jdptblog.s3.amazonaws.com/wp-content/uploads/2020/08/header.jpg'
             title="O que você está procurando?"
             subtitle="Temos qualquer tipo de Air Jordan que levanta sua alma!"
           >
