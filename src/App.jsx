@@ -7,17 +7,18 @@ import ProductCard from './components/productCard';
 import SeeAllBtn from './components/seeAllBtn';
 import EmailInput from './components/emailInput';
 import Rodape from './components/footer';
+import FadeInSection from './components/FadeinSection';
+
 
 //fonts
 import "@fontsource/poppins"; 
 import "@fontsource/antonio";
-import FadeInSection from './components/FadeinSection';
 
 function App() {
 
   return (
     <div>
-      <div className='bg-zinc-700 w-full flex items-center justify-center'>
+      <div className='bg-zinc-700 w-full sm:flex sm:justify-center'>
       <div className="App max-w-screen-2xl ">
         <div className='flex items-center justify-center py-2.5 sm:hidden border-gray-400 border-b'>
           <img src="jordan-logo.webp" alt="" className='w-12' />
