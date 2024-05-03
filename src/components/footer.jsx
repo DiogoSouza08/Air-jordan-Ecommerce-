@@ -12,7 +12,8 @@ const Rodape = () => {
         <div className=' flex gap-20'>
         <div className='flex  text-start gap-3 flex-col'>
           <span className=' font-semibold'>MENU</span>
-          <Navbar layout="vertical" />
+          <Navbar layout="vertical" isMobileHeader={false}  applyFadeEffect={false} />
+
         </div>
         <div className='flex  gap-3 flex-col'>
         <span className=' font-semibold  text-gray-300'>SOBRE A NIKE</span>

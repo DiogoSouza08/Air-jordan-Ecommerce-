@@ -23,7 +23,7 @@ const Header = () => {
         </FadeInSection>
 
         <div className='hidden lg:flex'>
-        <Navbar layout="horizontal" />
+        <Navbar layout="horizontal" applyFadeEffect={true} />
         </div>
 
        <FadeInSection>

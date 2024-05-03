@@ -13,6 +13,7 @@ import FadeInSection from './components/FadeinSection';
 //fonts
 import "@fontsource/poppins"; 
 import "@fontsource/antonio";
+import BuyBtn from './components/buyBtn';
 
 function App() {
 
@@ -24,10 +25,10 @@ function App() {
           <img src="jordan-logo.webp" alt="" className='w-12' />
         </div>
         <header className="App-header z-40">
-        <FadeInSection>
 
           <main className='flex-col bg-white sm:pb-0 pb-0 flex'>
             <Header />
+            <FadeInSection>
             <div className='px-3.5 lg:px-24 justify-between flex-col-reverse sm:flex-row flex items-center'>
               <div className='pb-20 sm:pb-0 h-auto items-start space-y-6 text-center sm:text-start flex-col justify-center flex'>
                 <span className='title font-bold text-red-700 text-8xl lg:text-9xl'>THE LAST<br /> DANCE</span>
@@ -35,8 +36,9 @@ function App() {
               </div>
               <img src="https://cdn.afew-store.com/assets/38/388297/1200/air-jordan-1-retro-high-og-sp-university-red-black-summit-white-dv1748-601-footwear%20%3E%20sneaker-packshots-120.jpg" alt="" className='w-full md:w-45 sm:w-96 ' />
             </div>
+            </FadeInSection>
+
           </main>
-          </FadeInSection>
 
         </header>
 
@@ -47,10 +49,11 @@ function App() {
 
         <section>
           <CustomSection
-            backgroundImage='https://images.unsplash.com/photo-1640000013087-842012285d30?q=80&w=1567&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'
+            backgroundImage='https://r0.wallpaperflare.com/path/943/148/889/nike-air-jordan-1-shoes-near-chain-link-fence-58988ba4051d129601fa1d5ce3d7e4a0.jpg?timestamp=1714751753643'
             title="O que você está procurando?"
             subtitle="Temos qualquer tipo de Air Jordan que levanta sua alma!"
           >
+            <BuyBtn/>
           </CustomSection>
         </section>
 
@@ -70,13 +73,14 @@ function App() {
             title="Você nas alturas"
             subtitle="O melhor da Jordan, estilo moderno, utilidade de rua!"
           >
+            <BuyBtn/>
           </CustomSection>
         </section>
 
         <FadeInSection>
         <section className='lg:px-24 gap-10 flex flex-col px-5 text-gray-400 justify-center text-center items-center py-24'>
           <span className='title uppercase sm:text-8xl text-6xl font-black '>Coleção Air Jordan</span>
-          <ProductCard />
+          <ProductCard limit={4} />
           <SeeAllBtn />
         </section >
         </FadeInSection>

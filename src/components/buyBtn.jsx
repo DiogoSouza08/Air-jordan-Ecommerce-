@@ -1,13 +1,26 @@
-import React from 'react'
+import React from 'react';
+import { Link } from 'react-router-dom';
+import FadeInSection from './FadeinSection';
 
 const BuyBtn = () => {
-  return (
-    <div>
-        <button className='bg-red-700 min-w-36 py-2.5 mt-5'>
-            COMPRAR
-        </button>
-    </div>
-  )
-}
+  const scrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth'
+    });
+  };
 
-export default BuyBtn
+  return (
+    <FadeInSection>
+      <div>
+        <Link to="/Calçados" onClick={scrollToTop}>
+          <button className='bg-red-700 min-w-36 py-2.5 mt-5'>
+            COMPRAR
+          </button>
+        </Link>
+      </div>
+    </FadeInSection>
+  );
+};
+
+export default BuyBtn;
