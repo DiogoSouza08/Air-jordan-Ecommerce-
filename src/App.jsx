@@ -49,7 +49,7 @@ function App() {
 
         <section>
           <CustomSection
-            backgroundImage='https://jdptblog.s3.amazonaws.com/wp-content/uploads/2020/08/header.jpg'
+            backgroundImage='https://images.unsplash.com/photo-1600500989762-7944a0b802b1?q=80&w=1587&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'
             title="O que você está procurando?"
             subtitle="Temos qualquer tipo de Air Jordan que levanta sua alma!"
           >
@@ -79,7 +79,7 @@ function App() {
 
         <FadeInSection>
         <section className='lg:px-24 gap-10 flex flex-col px-5 text-gray-400 justify-center text-center items-center py-24'>
-          <span className='title uppercase sm:text-8xl text-6xl font-black '>Coleção Air Jordan</span>
+          <span className='title uppercase sm:pb-4 sm:text-8xl text-6xl font-black '>Coleção Air Jordan</span>
           <ProductCard limit={4} />
           <SeeAllBtn />
         </section >
