@@ -1,6 +1,15 @@
 import React from 'react';
+import { useState } from 'react';
+import AddSacolaBtn from './AddSacolaBtn';
 
 const ProductCard = ({ limit = 4 }) => {
+  const [cart, setCart] = useState([]);
+
+  const handleAddToCart = (product) => {
+    setCart([...cart, product]);
+    console.log("Produto adicionado ao carrinho:", product);
+  };
+  
   // Array com os dados dos cards
   const cardsData = [
     {
@@ -109,21 +118,24 @@ const ProductCard = ({ limit = 4 }) => {
   const limitedCardsData = cardsData.slice(0, limit);
 
   return (
-    <div className="grid sm:grid-cols-4 grid-cols-2 gap-5">
-      {limitedCardsData.map((card) => (
-        <div key={card.id} id={card.id} className="cursor-pointer relative">
-          <img
-            src={card.imageUrl}
-            alt=""
-            className="w-full h-auto"
-          />
-          <div className="absolute inset-0 flex items-center px-2 py-1.5 sm:py-2 justify-between flex-col">
-          <p className="pt-2.5 text-sm text-zinc-700 font-semibold sm:text-md lg:text-lg">{card.productName}</p>
-           <div className='text-red-700 sm:text-md font-semibold lg:text-xl'><span>R$</span>{card.price}<span>,99</span></div> 
+    <div>
+      <div className="grid sm:grid-cols-4 grid-cols-2 gap-x-5 gap-y-12 md:gap-y-14 ">
+        {limitedCardsData.map((card) => (
+          <div key={card.id} id={card.id} className="cursor-pointer relative">
+            <img
+              src={card.imageUrl}
+              alt=""
+              className="w-full h-auto"
+            />
+            <div className="absolute inset-0 flex items-center px-2 py-1.5 sm:py-2 justify-between flex-col">
+              <p className="pt-2.5 text-sm text-zinc-700 font-semibold sm:text-md lg:text-lg">{card.productName}</p>
+              <div className='text-red-700 sm:text-md mb-12 font-semibold lg:text-xl'><span>R$</span>{card.price}<span>,99</span></div> 
+              {/* Passando a função handleAddToCart com o produto correto como argumento */}
+              <AddSacolaBtn onClick={() => handleAddToCart(card)} />
+            </div>
           </div>
-
-        </div>
-      ))}
+        ))}
+      </div>
     </div>
   );
 };
