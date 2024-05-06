@@ -1,6 +1,6 @@
 import React from 'react'
 import HeaderIMG from '../components/HeaderIMG'
-import ProductCard from '../components/productCard'
+import ProductCardCalçados from '../components/productCardCalçados'
 
 
 const Calçados = () => {
@@ -14,7 +14,7 @@ const Calçados = () => {
           </HeaderIMG>
         </section>
         <section className='lg:px-24  gap-10 flex flex-col px-5 text-gray-400 justify-center text-center items-center sm:py-16 py-11'>
-        <ProductCard limit={16} />
+        <ProductCardCalçados limit={16} />
         </section >
     </div>
   )

@@ -1,7 +1,5 @@
 body{
   font-family: "Poppins";
-  display: flex;
-  justify-content: center;
   --tw-bg-opacity: 1;
   background-color: rgb(63 63 70 / var(--tw-bg-opacity));
 }

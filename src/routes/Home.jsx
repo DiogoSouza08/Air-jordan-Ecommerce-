@@ -1,6 +1,6 @@
 import React from 'react'
-import FadeInSection from '../components/FadeinSection'
-import ProductCard from '../components/productCard';
+import FadeInSection from '../components/FadeinSection';
+import ProductCardCalçados from '../components/productCardCalçados';
 import BuyBtn from '../components/buyBtn';
 import SeeAllBtn from '../components/seeAllBtn';
 import EmailInput from '../components/emailInput';
@@ -55,7 +55,7 @@ const Home = () => {
         <FadeInSection>
           <section className='lg:px-24 gap-10 flex flex-col px-5 text-gray-400 justify-center text-center items-center py-24'>
             <span className='title uppercase sm:pb-4 sm:text-8xl text-6xl font-black '>Coleção Air Jordan</span>
-            <ProductCard limit={4} />
+            <ProductCardCalçados limit={4} />
             <SeeAllBtn />
           </section >
         </FadeInSection>
