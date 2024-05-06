@@ -17,7 +17,7 @@ const Navbar = ({ layout, isMobileHeader, applyFadeEffect }) => {
     <nav
       className={`gap-10 flex uppercase text-gray-300 ${textSize} lg:flex ${menuClass}`}
     >
-      <Link to="/" onClick={scrollToTop}>
+      <Link to="/Home" onClick={scrollToTop}>
         Home
       </Link>
       <Link to="/Masculino" onClick={scrollToTop}>

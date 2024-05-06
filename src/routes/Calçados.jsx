@@ -13,7 +13,7 @@ const Calçados = () => {
           >
           </HeaderIMG>
         </section>
-        <section className='lg:px-24 bg-zinc-700 gap-10 flex flex-col px-5 text-gray-400 justify-center text-center items-center py-24'>
+        <section className='lg:px-24  gap-10 flex flex-col px-5 text-gray-400 justify-center text-center items-center sm:py-16 py-11'>
         <ProductCard limit={16} />
         </section >
     </div>
