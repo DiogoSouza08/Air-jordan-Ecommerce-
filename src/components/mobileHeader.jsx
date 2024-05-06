@@ -14,12 +14,16 @@ export default function TemporaryDrawer() {
     setOpen(newOpen);
   };
 
+  const handleCloseDrawer = () => {
+    setOpen(false);
+  };
+
   return (
     <div>
       <FadeInSection>
-      <Button onClick={toggleDrawer(true)}>
-        <MenuIcon style={{ color: 'white', fontSize: 40 }} />
-      </Button>
+        <Button onClick={toggleDrawer(true)}>
+          <MenuIcon style={{ color: 'white', fontSize: 40 }} />
+        </Button>
       </FadeInSection>
       <Drawer
         open={open}
@@ -27,12 +31,12 @@ export default function TemporaryDrawer() {
         classes={{ paper: 'drawer-paper' }} 
       >
         <div className=" flex flex-col items-start gap-16 h-auto pt-10 text-start pl-6 sm:pr-44 pr-32 py-6">
-          <Navbar layout="vertical" isMobileHeader={true} applyFadeEffect={true} />
+          <Navbar layout="vertical" isMobileHeader={true} applyFadeEffect={true} onCloseDrawer={handleCloseDrawer} />
           <FadeInSection>
-          <div className='flex flex-col gap-4 bg-zinc-700'> 
-            <LoginBtn/>
-            <CadastroBtn/>
-          </div>
+            <div className='flex flex-col gap-4 bg-zinc-700'> 
+              <LoginBtn/>
+              <CadastroBtn/>
+            </div>
           </FadeInSection>
         </div>
       </Drawer>
