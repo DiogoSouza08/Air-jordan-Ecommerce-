@@ -9,9 +9,8 @@ import{
   RouterProvider
 }from 'react-router-dom';
 
-import Masculino from './routes/Masculino.jsx';
-import Feminino from './routes/Feminino.jsx';
-import Calçados from './routes/Calçados.jsx'
+import Contatos from './routes/Contatos.jsx';
+import Calçados from './routes/Calçados.jsx';
 import Roupas from './routes/Roupas.jsx';
 import Login from './routes/Login.jsx';
 import Sacola from './routes/Sacola.jsx';
@@ -26,12 +25,8 @@ const router = createBrowserRouter([
         element: <Home/>,
       },
       {
-        path: "masculino",
-        element: <Masculino/>,
-      },
-      {
-        path: "feminino",
-        element: <Feminino/>,
+        path: "contatos",
+        element: <Contatos/>,
       },
       {
         path: "calçados",

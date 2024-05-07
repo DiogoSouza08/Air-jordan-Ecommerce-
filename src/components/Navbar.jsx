@@ -25,17 +25,14 @@ const Navbar = ({ layout, isMobileHeader, applyFadeEffect, onCloseDrawer }) => {
       <Link to="/Home" onClick={handleLinkClick}>
         Home
       </Link>
-      <Link to="/Masculino" onClick={handleLinkClick}>
-        Masculino
-      </Link>
-      <Link to="/Feminino" onClick={handleLinkClick}>
-        Feminino
-      </Link>
       <Link to="/Calçados" onClick={handleLinkClick}>
         Calçados
       </Link>
       <Link to="/Roupas" onClick={handleLinkClick}>
         Roupas
+      </Link>
+      <Link to="/Contatos" onClick={handleLinkClick}>
+        Contatos
       </Link>
     </nav>
   );
