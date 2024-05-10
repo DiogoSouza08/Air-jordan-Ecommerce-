@@ -1,5 +1,5 @@
 import React from 'react'
-import SearchBar from '../components/SearchBar'
+import SearchBar from '../components/SearchBarHelp'
 import PermPhoneMsgIcon from '@mui/icons-material/PermPhoneMsg';
 import SmartphoneIcon from '@mui/icons-material/Smartphone';
 import CustomSection from '../components/customSection';

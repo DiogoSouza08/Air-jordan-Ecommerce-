@@ -41,6 +41,9 @@ const Home = () => {
               <p>Descubra a essência jordan</p>
             </div>
             <ClothingOptions />
+            <SeeAllBtn destination='/Roupas' />
+
+
           </section>
         </FadeInSection>
         <section>
@@ -56,7 +59,8 @@ const Home = () => {
           <section className='lg:px-24 gap-10 flex flex-col px-5 text-gray-400 justify-center text-center items-center py-24'>
             <span className='title uppercase sm:pb-4 sm:text-8xl text-6xl font-black '>Coleção Air Jordan</span>
             <ProductCardCalçados limit={4} />
-            <SeeAllBtn />
+            <SeeAllBtn destination='/Calçados' />
+
           </section >
         </FadeInSection>
         <section className='lg:px-24 gap-10 flex flex-col px-5 text-gray-400 justify-center text-center items-center py-24'>

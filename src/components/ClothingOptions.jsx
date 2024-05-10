@@ -28,7 +28,7 @@ const ClothingOptions = () => {
   return (
     <div className="grid sm:grid-cols-4 grid-cols-2 gap-5">
       {cardsData.map((card) => (
-        <div key={card.id} id={card.id} className="cursor-pointer text-center flex flex-col gap-2">
+        <div key={card.id} id={card.id} className="text-center flex flex-col gap-2">
           <img
             src={card.imageUrl}
             alt=""

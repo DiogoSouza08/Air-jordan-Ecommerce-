@@ -14,7 +14,7 @@ const Calçados = () => {
           </HeaderIMG>
         </section>
         <section className='lg:px-24  gap-10 flex flex-col px-5 text-gray-400 justify-center text-center items-center sm:py-16 py-11'>
-        <ProductCardCalçados limit={16} />
+        <ProductCardCalçados limit={20} />
         </section >
     </div>
   )
