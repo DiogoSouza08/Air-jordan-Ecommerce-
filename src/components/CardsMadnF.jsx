@@ -1,7 +1,7 @@
 import React from 'react';
 
 const ImageTextOverlay = ({ imageUrl, text }) => (
-  <div className="border cursor-pointer border-gray-500 w-full lg:py-72 py-60 overflow-hidden relative">
+  <div className="border border-gray-500 w-full lg:py-72 py-60 overflow-hidden relative">
     <div
       className="absolute inset-0 flex flex-col justify-end bg-cover bg-center z-0"
       style={{ backgroundImage: `url('${imageUrl}')` }}

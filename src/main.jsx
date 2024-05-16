@@ -15,6 +15,7 @@ import Roupas from './routes/Roupas.jsx';
 import Login from './routes/Login.jsx';
 import Sacola from './routes/Sacola.jsx';
 import Home from './routes/Home.jsx'
+import SearchBar from './routes/SearchBar.jsx';
 
 const router = createBrowserRouter([
   {
@@ -44,6 +45,10 @@ const router = createBrowserRouter([
       {
         path: "sacola",
         element: <Sacola/>,
+      },
+      {
+        path: "searchBar",
+        element: <SearchBar/>,
       },
     ],
   },

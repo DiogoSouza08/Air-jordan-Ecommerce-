@@ -1,5 +1,5 @@
 import React from 'react'
-import SearchBar from '../components/SearchBarHelp'
+import SearchBarHelp from '../components/SearchBarHelp'
 import PermPhoneMsgIcon from '@mui/icons-material/PermPhoneMsg';
 import SmartphoneIcon from '@mui/icons-material/Smartphone';
 import CustomSection from '../components/customSection';
@@ -11,7 +11,7 @@ const Contatos = () => {
     <FadeInSection>
     <div className='w-full flex-col gap-4 flex items-center justify-center'>
       <span className='title text-4xl text-black'>Precisa de Ajuda?</span>
-      <SearchBar/>
+      <SearchBarHelp/>
     </div>
     </FadeInSection>
 

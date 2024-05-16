@@ -17,9 +17,11 @@ const Header = () => {
         </div>
 
         <FadeInSection>
+        <Link to="/Home" >
         <div>
         <img src="./jordan-logo.webp" alt="" className='w-12 hidden sm:flex' />
         </div>
+        </Link>
         </FadeInSection>
 
         <div className='hidden lg:flex'>
@@ -31,7 +33,9 @@ const Header = () => {
             <div className='lg:flex hidden'>
                 <LoginBtn/>
             </div>
+            <Link to="/SearchBar">
             <SearchIcon fontSize="large" className='text-white'/>
+            </Link>
             <div className='lg:hidden'>
             <PersonIcon fontSize="large" className='text-white ' />
             </div>

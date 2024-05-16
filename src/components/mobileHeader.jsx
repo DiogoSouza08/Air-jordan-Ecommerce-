@@ -1,4 +1,5 @@
-import * as React from 'react';
+// TemporaryDrawer.js
+import React, { useState } from 'react';
 import Drawer from '@mui/material/Drawer';
 import Button from '@mui/material/Button';
 import MenuIcon from '@mui/icons-material/Menu';
@@ -8,7 +9,7 @@ import Navbar from './Navbar';
 import FadeInSection from './FadeinSection';
 
 export default function TemporaryDrawer() {
-  const [open, setOpen] = React.useState(false);
+  const [open, setOpen] = useState(false);
 
   const toggleDrawer = (newOpen) => () => {
     setOpen(newOpen);
@@ -34,8 +35,8 @@ export default function TemporaryDrawer() {
           <Navbar layout="vertical" isMobileHeader={true} applyFadeEffect={true} onCloseDrawer={handleCloseDrawer} />
           <FadeInSection>
             <div className='flex flex-col gap-4 bg-zinc-700'> 
-              <LoginBtn/>
-              <CadastroBtn/>
+              <LoginBtn onCloseDrawer={handleCloseDrawer} /> {/* Verifique se onCloseDrawer está sendo passado corretamente */}
+              <CadastroBtn onCloseDrawer={handleCloseDrawer} />
             </div>
           </FadeInSection>
         </div>

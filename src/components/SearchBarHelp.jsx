@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import SearchIcon from '@mui/icons-material/Search';
 
-const SearchBar = ({ onSearch }) => {
+const SearchBarHelp = ({ onSearch }) => {
   const [query, setQuery] = useState('');
 
   const handleChange = (event) => {
@@ -32,5 +32,5 @@ const SearchBar = ({ onSearch }) => {
   );
 };
 
-export default SearchBar;
+export default SearchBarHelp;
 
