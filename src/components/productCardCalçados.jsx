@@ -185,7 +185,7 @@ const ProductCard = ({ limit = 4, isCalçadosPage }) => {
         <div className='filterAndSearch gap-5 flex-col sm:flex-row items-center flex mb-6 justify-end'>
           <div className='flex gap-2 justify-center items-center'>
             <span>Filtrar por:</span>
-            <select onChange={handleFilterChange} value={filter} className='py-2 bg-red-700 border border-gray-400 text-white px-2.5'>
+            <select onChange={handleFilterChange} value={filter} className='py-2 rounded-none bg-red-700 border border-gray-400 text-white px-2.5'>
               <option value="all">Todas</option>
               <option value="feminino">Feminino</option>
               <option value="masculino">Masculino</option>
@@ -197,9 +197,9 @@ const ProductCard = ({ limit = 4, isCalçadosPage }) => {
               placeholder="Buscar produto..."
               value={searchTerm}
               onChange={handleSearchChange}
-              className="sm:py-2 py-3 px-4 focus:outline-none w-full" 
+              className="py-2 px-4 focus:outline-none w-full" 
             />
-            <SearchIcon className="absolute right-3 sm:top-2 top-3 h-5 w-5 text-gray-400" /> 
+            <SearchIcon className="absolute right-3 top-2  h-5 w-5 text-gray-400" /> 
           </div>
         </div>
       )}
